@@ -33,3 +33,20 @@ public class YourClassNameHere {
     }
 }
 
+ABC
+ABC
+ABC
+public class YourClassNameHere {
+    public static void main(String[] args) {
+      for(int i=1;i<=3;i++)
+      {
+        char ip='A';
+        for(int j=1;j<=3;j++)
+        { 
+            System.out.print(ip++);
+        }
+        System.out.println();
+      }
+    }
+}
+
