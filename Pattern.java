@@ -129,3 +129,15 @@ public class YourClassNameHere {
       }
     }
 }
+
+even or odd
+public class YourClassNameHere {
+    public static void main(String[] args) {
+          int i=5/; 
+          if(i%2==0)
+            System.out.print("even");
+          else
+            System.out.print("odd");
+    }
+}
+
