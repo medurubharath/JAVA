@@ -33,6 +33,59 @@ public class YourClassNameHere {
     }
 }
 
+
+
+*****
+ ****
+  ***
+   **
+    *
+public class YourClassNameHere {
+    public static void main(String[] args) {
+      for(int i=1;i<=5;i++)
+      {
+        for(int j=1;j<=5;j++)
+        {
+         if(i==j ||i<j)
+         System.out.print("*");
+         else
+         System.out.print(" ");
+        }
+        System.out.println();
+      }
+ 
+    }
+}
+ 
+Math function:
+public class YourClassNameHere {
+    public static void main(String[] args) {
+        System.out.println(Math.pow(2,4)); #16.0
+    }
+}
+ 
+0 
+1 1 
+2 3 5 
+8 13 21 34
+public class YourClassNameHere {
+    public static void main(String[] args) {
+     int prev=0,next=1;
+     for(int i=1;i<5;i++)
+     {
+       for(int j=1;j<=i;j++)
+     {
+       int sum=prev+next;
+       System.out.print(prev+" ");
+       prev=next;
+       next=sum;
+     } 
+     System.out.println();
+     }   
+    }
+}
+
+
 ABC
 ABC
 ABC
@@ -49,6 +102,7 @@ public class YourClassNameHere {
       }
     }
 }
+
 
 *
  *
@@ -140,7 +194,5 @@ public class YourClassNameHere {
             System.out.print("odd");
     }
 }
-
-h
 
 
