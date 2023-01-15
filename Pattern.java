@@ -195,4 +195,48 @@ public class YourClassNameHere {
     }
 }
 
+Print n numbers in reverese order
+public class Basic {
+    public static void main(String[] args) {
+        for(int i=100;i>=1;i--){
+            System.out.println(i);
+        }
+    }
+}
+
+Print palindrome
+import java.util.Scanner;
+public class Basic {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int num= sc.nextInt();
+        int res=num;
+        int rev=0;
+        while(num>0){
+            int rem=num%10;
+            rev=rev*10+rem;
+            num=num/10;
+        }
+        if(res==rev)
+            System.out.println("palindrome");
+        else
+            System.out.println("Not palindrome");
+    }
+}
+
+Count no of digits
+import java.util.Scanner;
+
+public class Basic {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int num= sc.nextInt();
+        int count=0;
+        while(num>0){
+                 num=num/10;
+                 count++;
+        }
+        System.out.println(count);
+    }
+}
 
