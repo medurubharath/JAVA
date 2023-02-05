@@ -224,6 +224,28 @@ public class Basic {
     }
 }
 
+Another program for palindrome
+
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello world!");
+        Scanner sc=new Scanner(System.in);
+        int ip=sc.nextInt();
+        int leng=String.valueOf(ip).length();
+        int i=0,rev=0,check=ip;
+        while(i<leng){
+        int rem=ip%10;
+        rev=rev*10+rem;
+        ip/=10;
+        i++;
+        }
+        if(check==rev)
+            System.out.println("palindrome");
+        else
+            System.out.println("Not palindrome");
+    }
+}
 Count no of digits
 import java.util.Scanner;
 
