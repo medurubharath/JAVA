@@ -1,0 +1,29 @@
+For the given number check last 3 digits whether it is prime or not
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int ip=sc.nextInt();
+        int count=0,sum=0,op=ip;
+        for(int i=0;i<3;i++){
+            if(count<3){
+                int rem=ip%10;
+                sum+=rem;
+                ip/=10;
+            }
+            count++;
+        }
+        int counttemp=0;
+        for(int i=2;i<op;i++)
+        {
+            if(op%i==0){
+                counttemp++;
+                break;
+            }
+        }
+        if(counttemp==0)
+            System.out.println("Prime");
+        else
+            System.out.println("Not Prime");
+    }
+}
