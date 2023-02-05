@@ -273,24 +273,4 @@ public class Main {
 }
 
 
-Find discount for given number by add the even number * add the odd number.Remove from the total will given the final price
-import java.util.Scanner;
-public class Main {
-    public static void main(String[] args) {
-        Scanner sc=new Scanner(System.in);
-        int ip=sc.nextInt(),op=ip;
-        int oddsum=0,evensum=0;
-        while(ip>0){
-            int rem=ip%10;
-            if(rem%2==0)
-                evensum+=rem;
-            else
-                oddsum+=rem;
-            ip/=10;
-        }
-        System.out.println("evensum:"+evensum);
-        System.out.println("oddsum:"+oddsum);
-        System.out.println("Multiple of odd and even sum:"+oddsum*evensum);
-        System.out.println("Final ammount:"+(op-(oddsum*evensum)));
-    }
-}
+
