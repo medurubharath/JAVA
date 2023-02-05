@@ -229,7 +229,6 @@ Another program for palindrome
 import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
         Scanner sc=new Scanner(System.in);
         int ip=sc.nextInt();
         int leng=String.valueOf(ip).length();
@@ -262,6 +261,16 @@ public class Basic {
     }
 }
 
+Another way for Count no of digits
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int ip=sc.nextInt();
+        int leng=String.valueOf(ip).length();
+        System.out.println("Count no of digits in given number:"+leng);
+    }
+}
 
 
 
