@@ -1,0 +1,17 @@
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+       Scanner sc=new Scanner(System.in);
+       int ip=sc.nextInt();
+       int temp=ip,sum=0;
+       while(ip>0){
+           int rem=ip%10;
+           sum+=rem*rem*rem;
+           ip/=10;
+        }
+       if(temp==sum)
+           System.out.println("Amstrong Number");
+       else
+           System.out.println("Not an Amstrong Number");
+    }
+}
