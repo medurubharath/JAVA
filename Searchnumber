@@ -16,5 +16,7 @@ public class Main {
        }
        if(flaq)
             System.out.println("The index key is in:"+index);
+       else
+           System.out.println("The index key is in:"+-1);
     }
 }
