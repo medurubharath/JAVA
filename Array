@@ -1,0 +1,25 @@
+In an array the elements which are less the given range
+import java.util.Scanner;
+
+public class Hello {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int size=sc.nextInt();
+        int rangeofnumber=sc.nextInt();
+        int array[]=new int[size];
+        System.out.println("Enter arrays values:");
+        for(int i=0;i<array.length;i++){
+            array[i]=sc.nextInt();
+        }
+        System.out.println(No_of_elements(array,rangeofnumber));
+    }
+
+    static  int No_of_elements(int arr[],int range){
+        int count=0;
+        for(int i=0;i<arr.length;i++){
+            if(arr[i]<range)
+                count++;
+        }
+        return count;
+    }
+}
