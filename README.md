@@ -1,4 +1,3 @@
-# JAVA using https://pythontutor.com/visualize.html#mode=edit
-Char link -> https://github.com/medurubharath/JAVA/blob/main/Char.java
+# Online Java compiler using the below link
+ https://pythontutor.com/visualize.html#mode=edit
 
-Pattern link -> https://github.com/medurubharath/JAVA/blob/main/Pattern.java
