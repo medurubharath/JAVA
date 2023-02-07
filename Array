@@ -1,6 +1,5 @@
 In an array the elements which are less the given range
 import java.util.Scanner;
-
 public class Hello {
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
@@ -26,7 +25,6 @@ public class Hello {
 
 
 Sort using pre-defined function
-
 import java.util.Arrays;
 public class Hello {
     public static void main(String[] args) {
@@ -39,7 +37,6 @@ public class Hello {
 }
 
 max and min in arrays:
-
 import java.util.Arrays;
 public class Hello {
     public static void main(String[] args) {
@@ -58,3 +55,4 @@ public class Hello {
         System.out.println(array[array.length-1]);
     }
 }
+
