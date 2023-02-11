@@ -1,0 +1,86 @@
+ Declare and implement a class to represent a list of integers, called
+IntList. Use an array of integers of size 100 to store the values in the list.
+Use an integer variable named num to store the number of elements currently in
+the list.  
+ 
+Include the following functions in your class:
+• a no-argument constructor that sets up an empty list.
+• a void function add(x) that adds a new value, x, to the end of the list. If
+adding the element would exceed the list’s capacity, this function should
+output an error message.
+• a function sort() that rearranges the items in the list so that they are in
+ascending order. You may use any algorithm to sort the list.
+• A function median() that returns the median value of the list of integers. If
+the values are in order from smallest to largest, the median is the middle
+value. If the list contains an even number of values, the median is the average
+of the two middle values. For example, if the list contains{3,5,8,4,9,6,7} the
+median is 6. If the list contains {6,7,8,9,1,2,3,4} the median is 5. If the list
+contains {7,8,9,10,1,2,3,4} the median is 5.5
+
+
+import java.util.ArrayList;
+import java.util.Collections;
+
+class IntList {
+    private Integer num = 0;
+    private ArrayList<Integer> arr = new ArrayList<Integer>(100);
+
+    public IntList() {
+    }
+
+    public Integer getNum() {
+        return num;
+    }
+
+    public ArrayList<Integer> getA() {
+        return arr;
+    }
+
+    public void add(Integer x) {
+        int size = arr.size();
+        if (size < 100)
+            arr.add(x);
+    }
+
+    public ArrayList<Integer> sortarray(ArrayList<Integer> a, int size) {
+        ArrayList<Integer> copy = new ArrayList<>(100);
+        copy = a;
+        Collections.sort(copy);
+        return copy;
+    }
+
+    public double median(ArrayList<Integer> list) {
+        Collections.sort(list);
+        int size = list.size();
+        int p = (int) (size / 2);
+        if (size % 2 != 0) {
+            return (double) (list.get(size / 2));
+        } else {
+            int p1 = list.get(p);
+            int p2 = list.get(p - 1);
+            return (double) ((p1 + p2) / 2);
+        }
+    }
+}
+public class Main {
+    public static void main(String[] args) {
+    IntList obj=new IntList();
+    obj.add(10);
+    obj.add(70);
+    obj.add(30);
+    obj.add(20);
+    obj.add(100);
+    obj.add(80);
+    ArrayList<Integer> list=obj.getA();
+    System.out.println("Unsorted array:");
+    for(Integer i:list)
+        System.out.println(i);
+    System.out.println("Unsorted array:");
+    Integer n=obj.getNum();
+    ArrayList<Integer> sorted=new ArrayList<>(obj.sortarray(list,n));
+    for(Integer i:sorted)
+        System.out.println(i);
+    double mean=obj.median(list);
+    System.out.println(mean);
+    }
+}
