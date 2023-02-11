@@ -1,0 +1,23 @@
+Write a recursive function named sumOfSquares that takes one
+nonnegative integer parameter num and returns the sum of the squares of the
+numbers from 0 to num.  
+For example, sumOfSquares(3) returns 14 (02+12+22+32
+ = 14)
+ Do not use loops, extra parameters, or global or static
+variables
+
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int num=sc.nextInt();
+        int sum=sumOfSquare(num);
+        System.out.println(sum);
+    }
+    public static int sumOfSquare(int n){
+        if(n==0)
+            return 0;
+        else
+            return (n*n)+sumOfSquare(n-1);
+    }
+}
