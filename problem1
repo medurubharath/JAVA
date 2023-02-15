@@ -1,4 +1,4 @@
-Write a function named validate that takes an array of integers and a size as an argument. 
+Definition: Write a function named validate that takes an array of integers and a size as an argument. 
 The function should return true if ALL of the numbers are between 0 and 100 (inclusive). 
 If ANY of the numbers in the array is less than 0 or greater than 100, the function should return false. 
 
