@@ -1,0 +1,59 @@
+/*
+
+    head -> null
+    
+    10 -> create a node -> assign 10 to data and null to ref
+    
+    head -> 10
+    
+    20 -> traverse to the end of the list
+       -> create a node -> assign 20 to data and null to ref
+       -> assign newly created node to the ref of previous node.
+       
+    head -> 10
+    temp -> 10
+*/
+class Node {
+    
+    int data;
+    Node ref;
+    
+    Node(int data) {
+        this.data = data;
+        this.ref = null;
+    }
+}
+
+class LL {
+    
+    Node head;
+    
+    LL() {}
+        
+    void insert(int data) {
+        
+        if(head == null) {
+            head = new Node(data);
+        } else {
+            
+            Node temp = head;
+            while(temp.ref != null) {
+                temp = temp.ref;
+            }
+            temp.ref = new Node(data);
+        }
+        
+    }
+    int delete() { return 0; }
+}
+
+public class Main {
+    
+    public static void main(String args[]) {
+      LL linkedList = new LL();
+      linkedList.insert(10);
+      linkedList.insert(20);
+      linkedList.insert(30);
+      linkedList.insert(-20);
+    }
+}
